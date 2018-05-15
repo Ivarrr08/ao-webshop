@@ -18,4 +18,4 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/overview', 'OverviewController@index')->name('overview');
+Route::get('/overview', 'OverviewController@index');
