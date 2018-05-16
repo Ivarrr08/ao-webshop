@@ -9,20 +9,21 @@
 
                     <div class="card-body">
                         Welcome to the category Overview
-                    </div>
-                    <table class="table table-bordered table-hover">
-                        <thead>
-                        <tr>
-                            <th>Categorie</th>
-                            <th>Beschrijving</th>
-                        </tr>
-                        </thead>
-                        {{--<tbody>--}}
-                        {{--@foreach ($categories as $category)--}}
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                            <tr>
+                                <th>Categorie</th>
+                                <th>Beschrijving</th>
+                            </tr>
+                            </thead>
+                            {{--<tbody>--}}
+                            {{--@foreach ($categories as $category)--}}
                             {{--include('category')--}}
-                        {{--@endforeach--}}
-                        {{--</tbody>--}}
-                    </table>
+                            {{--@endforeach--}}
+                            {{--</tbody>--}}
+                        </table>
+                    </div>
+
                 </div>
             </div>
         </div>

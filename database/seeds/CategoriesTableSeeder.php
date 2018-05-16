@@ -11,8 +11,23 @@ class CategoriesTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('categories')->insert([
-            'category_name' => str_random(10),
-        ]);
+        if (DB::table('categories')->get()->count() == 0) {
+
+            DB::table('categories')->insert([
+                'category_name' => 'Computer'
+            ],
+                [
+                    'category_name' => 'Televisie'
+                ],
+                [
+                    'category_name' => 'Telefonie'
+                ],
+                [
+                    'category_name' => 'Audio'
+                ],
+                [
+                    'category_name' => 'Tablets'
+                ]);
+        }
     }
 }
