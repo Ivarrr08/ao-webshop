@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+
 
 class OverviewController extends Controller
 {
@@ -23,6 +26,8 @@ class OverviewController extends Controller
      */
     public function index()
     {
-        return view('overview');
+
+        $categories = DB::table('categories')->get();
+        return view('overview', ['categories' => $categories]);
     }
 }

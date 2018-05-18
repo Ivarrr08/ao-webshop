@@ -16,11 +16,11 @@
                                 <th>Beschrijving</th>
                             </tr>
                             </thead>
-                            {{--<tbody>--}}
-                            {{--@foreach ($categories as $category)--}}
-                            {{--include('category')--}}
-                            {{--@endforeach--}}
-                            {{--</tbody>--}}
+                            <tbody>
+                            @foreach ($categories as $category)
+                            include('category')
+                            @endforeach
+                            </tbody>
                         </table>
                     </div>
 

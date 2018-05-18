@@ -19,3 +19,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/overview', 'OverviewController@index');
+Route::get('categoryList', function () {
+
+    $categories = DB::table('categories')->get();
+
+    return view('overview', ['categories' => $categories]);
+});
