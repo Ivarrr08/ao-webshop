@@ -30,6 +30,6 @@ class OrdersTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('orders_table');
     }
 }

@@ -29,6 +29,6 @@ class OrderlinesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('orderlines_table');
+        Schema::dropIfExists('orderlines_table');
     }
 }

@@ -28,6 +28,6 @@ class CategoriesTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('categories_table');
     }
 }

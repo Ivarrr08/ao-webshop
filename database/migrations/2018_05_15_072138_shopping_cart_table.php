@@ -28,6 +28,6 @@ class ShoppingCartTable extends Migration
      */
     public function down()
     {
-        Schema::drop('shopping_cart_table');
+        Schema::dropIfExists('shopping_cart_table');
     }
 }

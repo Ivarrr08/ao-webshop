@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class ArticlesTable extends Migration
+class ProductsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class ArticlesTable extends Migration
      */
     public function up()
     {
-        Schema::create('articles', function (Blueprint $table) {
-            $table->increments('article_id');
-            $table->string('article_name');
-            $table->string('article_price');
-            $table->string('article_description');
+        Schema::create('products', function (Blueprint $table) {
+            $table->increments('product_id');
+            $table->string('product_name');
+            $table->string('product_price');
+            $table->string('product_description');
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ class ArticlesTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('products_table');
     }
 }
